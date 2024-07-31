@@ -1,12 +1,45 @@
 .nav-link {
-    color: #000;
+  color: #000;
 }
   
 .nav-link.active {
-    background-color: #007bff;
-    color: white;
+  background-color: #007bff;
+  color: white;
 }
   
 .nav-link:hover {
-    background-color: #a4a5a7;
-}  
+  background-color: #a4a5a7;
+}
+
+.navbar-toggler {
+  font-size: 2.5rem;
+}
+
+.navbar-toggler-icon i {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-open {
+  transform: translateX(0);
+}
+
+.menu-closed {
+  transform: translateX(-100%);
+}
+
+.d-flex.flex-column {
+  width: 100%;
+  height: 100vh;
+}
